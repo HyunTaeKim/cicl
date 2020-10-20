@@ -28,4 +28,4 @@ jobs:
       id: setcontext
 
     - name: deploy
-      run: kubectl set image deployment app app=mnhyuntaekim/app:$GITHUB_RUN_NUMBER
+      run: kubectl set image deployment predict app=mnhyuntaekim/app:$GITHUB_RUN_NUMBER
