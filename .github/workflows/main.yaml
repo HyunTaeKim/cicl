@@ -29,3 +29,6 @@ jobs:
 
     - name: deploy
       run: kubectl set image deployment predict app=mnhyuntaekim/app:$GITHUB_RUN_NUMBER
+
+    - name: get pod and find image
+      run: kubectl get pod -o yaml | grep "image:"
